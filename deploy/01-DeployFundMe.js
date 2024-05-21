@@ -9,7 +9,7 @@ module.exports = async ({ deployments, getNamedAccounts }) => {
   const chainId = network.config.chainId
 
   let priceFeedsAddr
-  const minFundAmt = networkConfig[chainId].minFundAmt
+  // const minFundAmt = networkConfig[chainId].minFundAmt
 
   if (localNetwork.includes(network.name)) {
     const priceFeeds = await deployments.get("MockV3Aggregator")
