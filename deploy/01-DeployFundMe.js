@@ -28,9 +28,9 @@ module.exports = async ({ deployments, getNamedAccounts }) => {
     waitConfirmations: network.config.blockConfirmations || 1
   })
 
-  if (!localNetwork.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
-    await verifyContract(fundMe.address, args)
-  }
+  // if (!localNetwork.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
+  //   await verifyContract(fundMe.address, args)
+  // }
 }
 
 module.exports.tags = ["all", "fundme"]

@@ -52,12 +52,12 @@ module.exports = {
   },
 
   gasReporter: {
-    enabled: false,
+    enabled: true,
     noColors: true,
     outputFile: "egas-Reports.txt",
     token: "ETH",
     currency: "USD",
-    coinmarketcap: COINMARKETCAP_API_KEY,
+    // coinmarketcap: COINMARKETCAP_API_KEY,
   },
 
   etherscan: {
